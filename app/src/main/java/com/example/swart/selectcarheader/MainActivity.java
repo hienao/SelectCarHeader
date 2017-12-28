@@ -14,6 +14,7 @@ import android.widget.TextView;
 import win.swt6.selectcarlib.OnItemClickListener;
 import win.swt6.selectcarlib.OnShrinkButtonClickListener;
 import win.swt6.selectcarlib.ScreenUtil;
+import win.swt6.selectcarlib.SelectCarPopWindow;
 import win.swt6.selectcarlib.SelectCharHeaderView;
 
 public class MainActivity extends Activity {
@@ -29,7 +30,18 @@ public class MainActivity extends Activity {
         mTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showSelectCarPopWindow();
+                SelectCarPopWindow.getInstance().showSelectCarPopWindow(MainActivity.this, new OnItemClickListener() {
+                    @Override
+                    public void selectString(String select) {
+                        mTextView.setText(select);
+                        SelectCarPopWindow.getInstance().dismissSelectCarPopWindow();
+                    }
+                }, new OnShrinkButtonClickListener() {
+                    @Override
+                    public void click() {
+                        SelectCarPopWindow.getInstance().dismissSelectCarPopWindow();
+                    }
+                },mLayout);
             }
         });
     }
