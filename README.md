@@ -1,8 +1,7 @@
 # SelectCarHeader
 
 SelectCarHeader是一个选择车牌照开头省份的控件
-[![](https://jitpack.io/v/shiwentao666/SelectCarHeader.svg)](https://jitpack.io/#shiwentao666/SelectCarHeader)  [![Build status](https://ci.appveyor.com/api/projects/status/ewutryrubo5i23yi/branch/master?svg=true)](https://ci.appveyor.com/project/shiwentao666/selectcarheader/branch/master)
-
+[![](https://jitpack.io/v/shiwentao666/SelectCarHeader.svg)](https://jitpack.io/#shiwentao666/SelectCarHeader)  [![Build status](https://ci.appveyor.com/api/projects/status/ewutryrubo5i23yi?svg=true)](https://ci.appveyor.com/project/shiwentao666/selectcarheader)
 #### 引入方式
 
 1. 在项目目录中的`build.gradle`文件中做如下修改：
