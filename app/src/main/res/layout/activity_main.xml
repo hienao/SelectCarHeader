@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rlayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="com.example.swart.selectcarheader.MainActivity">
+   <TextView
+       android:id="@+id/tv_car_num_header"
+       android:layout_gravity="center_vertical"
+       android:layout_width="80dp"
+       android:paddingEnd="9dp"
+       android:paddingRight="9dp"
+       android:paddingLeft="13dp"
+       android:paddingStart="13dp"
+       android:layout_height="30dp"
+       android:drawableEnd="@drawable/selectcarlib_pic_triangle"
+       android:drawablePadding="9dp"
+       android:drawableRight="@drawable/selectcarlib_pic_triangle"
+       android:gravity="center_vertical|end"
+       android:background="@drawable/selectcarlib_bg_car_header_select"
+       android:textColor="#4d7deb"
+       android:textSize="16sp"
+       android:text="浙"
+       tools:ignore="HardcodedText"/>
+
+</RelativeLayout>
